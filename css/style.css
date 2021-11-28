@@ -1,0 +1,1361 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Spinnaker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.bg_cover {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Spinnaker', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-weight: 700; */
+    /* text-transform: uppercase; */
+}
+
+p {
+    /* font-size: 16px; */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+:root {
+    --bColor: #212529;
+}
+
+/*ALL SECTION TITLE HERE*/
+.section_title {}
+
+.section_title h2 {
+    font-size: 35px;
+    color: #f96d64;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.section_title h2::before {
+    content: '';
+    position: absolute;
+    background: #f96d64;
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section_title p {
+    color: #5c5c5c;
+    line-height: 1.6;
+}
+
+/* theme_btnn CSS HERE */
+
+
+/******************* END OF COMMON CSS *******************/
+
+/* PRELOADER CSS */
+
+
+/*=============================
+    01. HEADER PART CSS
+==============================*/
+.header-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999999999;
+    width: 100%;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.main_menu {}
+
+.menu_items ul.navbar-nav {
+    /* margin-left: auto; */
+    align-items: center;
+}
+
+.menu_items ul.navbar-nav li {
+    margin-left: 30px;
+}
+
+.menu_items ul.navbar-nav li a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    padding: 20px 0;
+    position: relative;
+}
+
+.menu_items ul.navbar-nav li a.u_line::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0%;
+    height: 1px;
+    top: 75%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.menu_items ul.navbar-nav li a.u_line:hover::before {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+
+.menu_items ul.navbar-nav li a.menu_btn {
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+
+.menu_items ul.navbar-nav li a.menu_icon .fa {
+    font-size: 20px;
+}
+
+/* SUBMENU */
+.menu_items ul.navbar-nav li.sub_menu {
+    position: relative;
+}
+
+.menu_items ul.navbar-nav li.sub_menu ul.sub_menu_itmes {
+    position: absolute;
+    background: #2E2F30;
+    width: 250px;
+    padding: 0;
+    top: 100%;
+    left: -35px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.menu_items ul.navbar-nav li.sub_menu ul.sub_menu_itmes li {}
+
+.menu_items ul.navbar-nav li.sub_menu ul.sub_menu_itmes li a {
+    padding: 0;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #b9b6b6;
+    transition: all .3s linear;
+}
+
+.menu_items ul.navbar-nav li.sub_menu ul.sub_menu_itmes li a:hover {
+    color: #fff;
+}
+
+.menu_items ul.navbar-nav li.sub_menu ul.sub_menu_itmes li:nth-child(1) a {
+    margin-top: 15px;
+}
+
+.menu_items ul.navbar-nav li.sub_menu:hover ul.sub_menu_itmes {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* STICKY MENU */
+.main_menu.sticky {
+    position: fixed;
+    background: #252B2D;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999999;
+    animation: stickyAni 3s;
+}
+
+@keyframes stickyAni {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+/*=============================
+    02. BANNER PART CSS
+==============================*/
+.banner_part {
+    overflow: hidden;
+    position: relative;
+}
+
+.banner_video {
+    position: relative;
+}
+
+.banner_video .b_video {
+    width: 100%;
+    height: 100%;
+}
+
+.banner_video span {
+    background: #000;
+    width: 100% !important;
+    height: 100% !important;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.banner_title {}
+
+.banner_title_wrap {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+}
+
+.banner_title_wrap h1 {
+    font-size: 56px;
+    color: #fff;
+    /* margin-bottom: 30px; */
+}
+
+.banner_title_wrap p {
+    font-size: 18px;
+    color: #fff;
+    margin: 30px 0;
+    font-weight: 500;
+}
+
+.banner_title_wrap a.banner_btn {
+    text-transform: uppercase;
+    color: #1b1b1b;
+    background: #fff;
+    border: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 20px 30px;
+    border-radius: 35px;
+}
+
+/*=============================
+    03. GUEST HOUSE PART CSS
+==============================*/
+.guest_house_part {
+    background: #F4F6F2;
+}
+
+.guest_house_title.text-center {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.guest_house_title .section_title p {
+    margin-bottom: 100px;
+}
+
+/* BANNER SLIDER START */
+.banner_slider {
+    position: relative;
+}
+
+.banner-slider-wrapper {
+    /* min-width: 100%; */
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.single_banner_slider {
+    /* width: 25% !important; */
+}
+
+.single_banner_slider img {
+    /* width: 25% !important; */
+}
+
+.banner_slider .slider_btn {}
+
+.banner_slider .slider_btn .btn_left {
+    left: 15px;
+}
+
+.banner_slider .slider_btn .btn_right {
+    right: 15px;
+}
+
+.banner_slider .slider_btn .btn_left,
+.btn_right {
+    /* font-size: 30px;
+    border: 1px solid #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px; */
+    /* line-height: 40px; */
+    /* text-align: center; */
+    /* border-radius: 50%; */
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.banner_slider .slider_btn .fa {
+	font-size: 20px;
+	/* background: red; */
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border: 1px solid #f96d64;
+	color: #f96d64;
+}
+
+/* BANNER SLIDER END */
+.banner_left {}
+
+.banner_left h4 {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.banner_left p {
+    color: #000;
+    line-height: 1.65;
+    text-align: justify;
+}
+
+/*=============================
+    04. ROOMS PART CSS
+==============================*/
+.rooms_part {}
+
+.rooms-title {}
+
+.rooms-title .section_title h2 {
+    /* margin-bottom: 30px; */
+}
+
+.rooms-title .section_title p {
+    color: #5c5c5c;
+}
+
+.rooms_btn {
+    margin-top: 40px;
+}
+
+/* .rooms_btn button {
+    text-align: center;
+    margin: 45px 0;
+} */
+
+.rooms_btn button {
+    text-transform: capitalize;
+    color: #8d9093;
+    display: inline-block;
+    margin: 5px 15px;
+    background: transparent;
+    border: 0;
+    transition: all .3s linear;
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.rooms_btn button.active {
+    color: #f96d64;
+    position: relative;
+}
+
+.rooms_btn button.active::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background: #f96d64;
+    width: 100%;
+    height: 1px;
+    top: 100%;
+    margin-top: 5px;
+}
+
+.rooms_btn button:hover {
+    color: #414141;
+}
+
+.rooms_btn button.active:hover {
+    color: #f96d64 !important;
+}
+
+
+.room_items {
+    position: relative;
+}
+
+.room_items a.room_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(249, 109, 100, 0.75);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: visible;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.room_items a.room_overlay .r_o_warp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.room_items a.room_overlay .r_o_warp h4 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.room_items a.room_overlay .r_o_warp p {
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.room_items a.room_overlay .r_o_warp span.dollar {
+    font-size: 36px;
+    color: #fff;
+    text-transform: lowercase;
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 600;
+}
+
+.room_items a.room_overlay .r_o_warp span.tt {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.room_items:hover>a.room_overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*=============================
+    05. WHY US PART CSS
+==============================*/
+.why_us_part {
+    background: #F7F5F5;
+    overflow: hidden;
+}
+
+.wwwwwwwwwwwwww {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.why_us_left {
+    width: 50%;
+    padding: 0 65px;
+}
+
+.w_u_l_wrapper {}
+
+.w_u_l_wrapper h4 {
+    color: #000;
+    font-size: 30px;
+}
+
+.w_u_l_wrapper p {
+    color: #000;
+    line-height: 1.65;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.w_u_l_wrapper .w_h_btn a {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    background: #000;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.w_u_l_wrapper .w_h_btn a:hover {
+    background: #000;
+    opacity: 0.85;
+}
+
+.why_us_right {
+    /* background-image: url(../images/why_us1.jpg) !important; */
+    width: 50%;
+    height: 400px;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: bottom; */
+    /* position: relative; */
+    /* width: 100vw; */
+    /* height: 400px; */
+}
+
+.why_us_right .why_us_right_image {
+    /* background-image: url(../images/why_us1.jpg) !important;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+}
+
+.why_us_right .why_us_right_image img {
+    /* background-image: url(../images/why_us1.jpg) !important; */
+    width: 100%;
+    height: 100%;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: bottom; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+}
+
+.why_us_right .why_us_right_image.two {
+    background-image: url(../images/why_us2.jpg) !important;
+}
+
+.hosting_us {
+    background: #F5645F;
+    text-align: center;
+}
+
+.hosting_wrapper {
+    padding: 100px 0;
+}
+
+.hosting_us h5 {
+    font-size: 25px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.hosting_us ul {
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.hosting_us ul li {}
+
+.hosting_us ul li .fa {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 5px;
+}
+
+.hosting_us .amazing_review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hosting_us .amazing_review .hh {
+    /* width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    line-height: 80px;
+    display: block; */
+}
+
+.hosting_us .amazing_review .hh img {
+    width: 60px !important;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.hosting_us .amazing_review .hhn {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.hosting_us .amazing_review .hhn h6 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.hosting_us .amazing_review .hhn span {
+    color: #fff;
+    /* text-align: left; */
+}
+
+/*=============================
+    06. PACKAGES PART CSS
+==============================*/
+.packages_part {}
+
+.row.pkg {}
+
+.single_package {
+    position: relative;
+}
+
+.package_image {}
+
+.p_tt {
+    display: inline-block;
+    background: rgba(162, 139, 135, 0.623);
+    padding: 20px 15px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    text-align: center;
+    /* opacity: 0.7; */
+}
+
+.p_tt span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.p_tt span.tww {
+    font-size: 14px !important;
+}
+
+.package_info {}
+
+
+.p_i_wrapper {
+    padding: 45px 5px 30px 40px;
+    background: #F1F1F1;
+}
+
+.p_i_wrapper span {
+    font-size: 14px;
+    color: #5C5C5C;
+    /* margin-bottom: 30px !important; */
+}
+
+.p_i_wrapper h4 {
+    color: #F66761;
+    margin: 15px 0;
+}
+
+.p_i_wrapper p {
+    color: #5C5C5C;
+    line-height: 1.65;
+}
+
+/*=============================
+    07. EXPERIENCE PART CSS
+==============================*/
+.experience_part {}
+
+.ex_top {
+    background: #F4645F;
+    text-align: center;
+}
+
+.ex_top_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.ex_top_wrapper h6 {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.ex_top_btn {}
+
+.ex_top_btn a {
+    color: #fff;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.ex_top_btn a:hover {
+    /* border: transparent; */
+    background: #fff;
+    color: #000;
+}
+
+.ex_video_part {
+    background: url(../images/ex_video.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.ex_video_part {}
+
+.ex_video_wrapper {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 200px 0;
+}
+
+.ex_video_part h5 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.ex_video_part a {
+    margin-top: 20px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.ex_video_part a .fa {
+    font-size: 35px;
+    color: #fff;
+    /* border: 9px solid #fff; */
+    /* width: 80px; */
+    /* height: 80px; */
+    /* line-height: 80px; */
+    /* border-radius: 50%; */
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+/*=============================
+    08. AMENITIES PART CSS
+==============================*/
+.amenities_part {
+    background: #F4F6F2;
+}
+
+.row.ame_part {}
+
+.single_amenities {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.single_amenities.ll {
+    margin-bottom: 0;
+}
+
+.s_a_iconn {
+    margin-right: 20px;
+}
+
+.s_a_iconn .fa {
+    font-size: 44px;
+    color: #717270;
+}
+
+.s_a_text {}
+
+.s_a_text h5 {
+    font-size: 22px;
+    color: #f96d64;
+    margin-bottom: 10px;
+}
+
+.s_a_text p {
+    line-height: 1.65;
+    color: #5c5c5c;
+    font-weight: 500;
+}
+
+/*=============================
+    09. BOOKING PART CSS
+==============================*/
+.booking_part {}
+
+.booking_title {}
+
+.booking_title .fa {
+    font-size: 54px;
+    color: #50514f;
+    margin-bottom: 30px;
+}
+
+.booking_title h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+    color: #f96d64;
+}
+
+/* ********************************************************* */
+.booking_details {}
+
+.b_d_wrapper {
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 100%;
+}
+
+.b_d_wrapper h4 {
+    color: #f96d64;
+    font-size: 25px;
+    text-transform: inherit;
+    margin-bottom: 30px;
+}
+
+.b_d_dateseletor {
+    display: flex;
+    align-items: center;
+}
+
+.check_box {
+    width: 25%;
+}
+
+.check_box p {
+    font-size: 14px;
+    color: #5d5d5d;
+}
+
+.check_box input {
+    font-size: 14px;
+    padding: 20px 10px;
+    color: #5d5d5d;
+    border: 1px solid #CCCCCC;
+    text-transform: capitalize;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.check_box input:hover {
+    border: 1px solid #CCCCCC;
+}
+
+.check_box p input {}
+
+.check_box p input::placeholder {}
+
+.chech_btnn {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.chech_btnn a {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #fff;
+    background: #f96d64;
+    padding: 20px 60px;
+    border-radius: 30px;
+}
+
+/* CALENDER CSS HERE */
+.booking_calender h6 {
+    font-size: 25px;
+    color: #f96d64;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.calendar-box {
+    border: 1px solid #E5E7E9;
+}
+
+.buttons-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    /* border-bottom: 1px solid #eee; */
+    background: #E5E7E9;
+}
+
+.buttons-container .label-container {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.month-label {
+    margin-right: 5px;
+}
+
+.week {
+    /* margin: 10px 0; */
+    /* display: flex; */
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid; */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.week .day.header {}
+
+.week .day.header {
+    font-weight: normal !important;
+    text-transform: capitalize !important;
+    font-size: 18px !important;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.day span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center !important;
+    font-size: 16px !important;
+}
+
+.special-buttons {
+    text-align: center;
+    /* border-top: 1px solid #eee; */
+    padding: 5px 0;
+    background: #E5E7E9;
+}
+
+/*=============================
+    10. QUESTION PART CSS
+==============================*/
+.question_part {
+    background: #F4F6F2;
+}
+
+.question_title {
+    margin-bottom: 40px;
+}
+
+.question_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question_input input.ii {
+    font-size: 15px !important;
+    text-transform: capitalize;
+    color: #2D2D2D;
+    border: 1px solid #d3d3d3;
+    width: 23%;
+    height: 60px;
+    border-radius: 5px;
+    outline: none;
+    margin: 0;
+    padding-left: 15px;
+}
+
+.ii.email {
+    background: #F4F6F2;
+}
+
+.question_input input.ii:focus {
+    /* border: transparent; */
+
+}
+
+.question_input .chech_btnn {
+    width: 23%;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.question_input .chech_btnn a {
+    width: 90%;
+    text-align: center;
+}
+
+
+.single_input {
+    width: 25%;
+}
+
+.single_input input {}
+
+.single_input input::placeholder {}
+
+.single_input input:hover {
+    /* background: #f1f1f1; */
+    /* outline: none;
+    border: 1px solid #000; */
+}
+
+.single_input .chech_btnn {}
+
+/*=============================
+    11. FOOTER PART CSS
+==============================*/
+.footer_part {
+    background: #292E31;
+}
+
+.footer_top {}
+
+.single_footer {}
+
+.footer_title {}
+
+.footer_title h4 {
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+}
+
+.single_footer p {
+    color: #d2d2d2;
+    padding-top: 30px;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: justify;
+    margin-bottom: 45px;
+}
+
+.footer_logo {}
+
+.single_footer ul {
+    padding-left: 0;
+    padding-top: 30px;
+}
+
+.single_footer ul li {
+    margin-bottom: 15px;
+}
+
+.single_footer ul li a {
+    font-size: 14px;
+    color: #d2d2d2;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.single_footer ul li a .fa {
+    margin-right: 10px;
+}
+
+.single_footer ul li:hover a {
+    color: #fff;
+}
+
+.single_footer ul li a .fa span {}
+
+.footer_icon ul {
+    display: flex;
+    padding-top: 20px !important;
+}
+
+.footer_icon ul li a {
+    font-size: 20px;
+}
+
+.footer_icon.payment ul li a {
+    font-size: 14px;
+    margin-right: 15px;
+    border: 1px solid #d2d2d252;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+.single_footer.post p {
+    line-height: 1.65;
+}
+
+.footer_bottom {
+    background: #23272A;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer_bottom p {
+    color: #d2d2d2;
+    text-transform: capitalize;
+}
+
+.footer_bottom p .fa {}
+
+/*=============================
+    12. BACK TO TOP PART CSS
+==============================*/
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    background-color: rgba(000, 000, 000, 0.3);
+    color: #fff;
+    font-size: 28px;
+    border-radius: 5px;
+    z-index: 99;
+    text-align: center;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    display: none;
+}
+
+.back-to-top:hover {
+    color: #fff;
+    background-color: rgba(000, 000, 000, 0.5);
+}
+
+/*=============================
+    13. ENQUIRY PART CSS
+==============================*/
+#feedback {
+    position: fixed;
+    left: 15px;
+    bottom: 70px;
+    height: 280px;
+    background: #F4F6F2;
+    border: transparent;
+    z-index: 99;
+    /* padding: 26px 10px; */
+}
+
+/* #feedback {
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+    height: 250px;
+    margin-left: -3px;
+    margin-bottom: -3px;
+} */
+
+#hideme {
+    position: fixed;
+    bottom: 10px;
+    right: 60px;
+    z-index: 99999;
+}
+
+#feedback-form {
+    float: left;
+    width: 300px;
+    height: 100%;
+    z-index: 1000;
+    padding-right: 10px;
+    background-clip: 'padding-box';
+    border: 1px solid rgba(0, 0, 0, .2);
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+#feedback-tab:hover {
+    /* background-color: rgba(0, 0, 0, 0.4); */
+}
+
+#feedback-form input,
+#feedback-form textarea {
+    font-size: 16px !important;
+    margin-bottom: 10px;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #000;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.form-control {
+    border: 1px solid #8d9093 !important;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -moz-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -ms-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#feedback-form form {
+    padding: 10px;
+}
+
+#feedback-form textarea {
+    resize: none;
+}
+
+.octicon {
+    display: inline-block;
+    vertical-align: text-top;
+    /* fill: currentColor; */
+}
+
+
+.octicon-comment {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    background: #1D1D1D;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.btnnnn.octicon.octicon-comment .fa {
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.btnnnn.octicon.octicon-comment span {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+/* .octicon-comment {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    opacity: 0.2;
+} */
+
+.octicon-comment:hover {
+    opacity: 1.0;
+}
+
+.checkbox {
+    display: inline-block;
+}
+
+
+
+/*=============================
+    14. PART CSS
+==============================*/
+
+/*=============================
+    15. PART CSS
+==============================*/
+
+/*=============================
+    16. PART CSS
+==============================*/
+
+/*=============================
+    17. PART CSS
+==============================*/
+
+/*=============================
+    18. PART CSS
+==============================*/
+
+/*=============================
+    19. PART CSS
+==============================*/

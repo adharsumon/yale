@@ -1,0 +1,383 @@
+/*// Extra extra large devices (large desktops, 1400px and up)*/
+@media (min-width: 1400px) {}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* header */
+    .header-top {
+        padding: 15px 0;
+    }
+
+    .navbar-toggler {
+        color: #fff !important;
+        border: 0 !important;
+    }
+
+    #navbarSupportedContent {
+        background: #000;
+    }
+
+    /* banner */
+    .banner_title_wrap {
+        width: 50%;
+    }
+
+    .banner_title_wrap h1 {
+        font-size: 45px;
+    }
+
+    /* rooms_part */
+    .wwwwwwwwwwwwww {
+        margin-bottom: 30px;
+    }
+
+    .why_us_left {
+        padding: 0 15px;
+    }
+
+    .w_u_l_wrapper h4 {
+        font-size: 22px;
+    }
+
+    .why_us_right {
+        height: auto;
+    }
+
+    /* footer */
+    .single_footer.res {
+        margin-bottom: 30px;
+    }
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* header */
+    .header-top {
+        padding: 15px 0;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .navbar-toggler {
+        color: #fff !important;
+        border: 0 !important;
+    }
+
+    #navbarSupportedContent {
+        background: #000;
+    }
+
+    /* banner */
+    .banner_title_wrap {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .banner_title_wrap h1 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .banner_title_wrap p {
+        margin: 15px 0;
+    }
+
+    /* guest house */
+    .guest_house_part.pt-100.pb-100 {
+        padding: 50px 0;
+    }
+
+    .guest_house_title.text-center {
+        width: 100%;
+    }
+
+    /* rooms_part */
+    .rooms_part.pt-100.pb-100 {
+        padding: 50px 0;
+    }
+
+    .rooms_btn button {
+        margin: 5px 8px;
+    }
+
+    .col-md-4.single_room.kit.sb.res {
+        margin-bottom: 30px !important;
+    }
+
+    /* .col-md-4.single_room.queen.res {
+        margin-top: 30px;
+    } */
+    /* Why us */
+    section.why_us_part {
+        padding: 50px 0;
+    }
+
+    .wwwwwwwwwwwwww {
+        margin-bottom: 30px;
+    }
+
+    .why_us_left {
+        padding: 0 15px;
+    }
+
+    .w_u_l_wrapper h4 {
+        font-size: 22px;
+    }
+
+    .why_us_right {
+        height: auto;
+    }
+
+    /* package */
+    section.packages_part.pt-100.pb-100 {
+        padding: 50px 0;
+    }
+
+    .single_package {
+        margin-bottom: 30px;
+    }
+
+    /* experience */
+    .ex_top_wrapper {
+        flex-direction: column;
+    }
+
+    .ex_top_wrapper h6 {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    /* amenities */
+    section.amenities_part.pt-100.pb-100 {
+        padding: 50px 0;
+    }
+    /* booking */
+    section.booking_part.pt-100.pb-100 {
+        padding: 50px 0;
+    }
+    .b_d_wrapper {
+        text-align: center;
+    }
+    .b_d_dateseletor {
+        flex-direction: column;
+    }
+    .check_box.mr-15 {
+        margin-right: 0;
+    }
+
+    /* question */
+    section.question_part.pt-100.pb-100 {
+        padding: 50px 0;
+    }
+    .question_input {
+        flex-direction: column;
+        width: 100%;
+    }
+    .question_input input.ii {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .question_input .chech_btnn {
+        width: 35%;
+        margin-top: 15px;
+    }
+
+    /* footer */
+    .single_footer.res {
+        margin-bottom: 30px;
+    }
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .section_title h2 {
+        font-size: 30px;
+    }
+    /* header */
+    .header-top {
+        padding: 15px 0;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .navbar-toggler {
+        color: #fff !important;
+        border: 0 !important;
+    }
+
+    #navbarSupportedContent {
+        background: #000;
+    }
+    .menu_items ul.navbar-nav li a {
+        padding: 13px 0;
+    }
+
+    /* banner */
+    .banner_video {
+        padding: 80px 0;
+    }
+    .banner_title_wrap {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .banner_title_wrap h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .banner_title_wrap p {
+        margin: 15px 0;
+    }
+    .banner_title_wrap a.banner_btn {
+        padding: 15px 30px;
+        border-radius: 35px;
+    }
+
+    /* guest house */
+    .guest_house_part.pt-100.pb-100 {
+        padding: 50px 0;
+    }
+
+    .guest_house_title.text-center {
+        width: 100%;
+    }
+
+    /* rooms_part */
+    .rooms_part.pt-100.pb-100 {
+        padding: 50px 0;
+    }
+
+    .rooms_btn button {
+        margin: 13px 8px;
+    }
+
+    .col-md-4.single_room.kit.sb.res {
+        margin-bottom: 30px !important;
+    }
+
+    /* .col-md-4.single_room.queen.res {
+        margin-top: 30px;
+    } */
+    /* Why us */
+    section.why_us_part {
+        padding: 50px 0;
+    }
+
+    .wwwwwwwwwwwwww {
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .why_us_left {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .w_u_l_wrapper h4 {
+        font-size: 22px;
+    }
+
+    .why_us_right {
+        height: auto;
+        width: 100%;
+    }
+
+    /* package */
+    section.packages_part.pt-100.pb-100 {
+        padding: 50px 0;
+    }
+
+    .single_package {
+        margin-bottom: 30px;
+    }
+
+    /* experience */
+    .ex_top_wrapper {
+        flex-direction: column;
+    }
+
+    .ex_top_wrapper h6 {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .ex_video_part h5 {
+        font-size: 25px;
+    }
+
+    /* amenities */
+    section.amenities_part.pt-100.pb-100 {
+        padding: 50px 0;
+    }
+    .row.ame_part.mt-60 {
+        margin-top: 30px;
+    }
+    /* booking */
+    section.booking_part.pt-100.pb-100 {
+        padding: 50px 0;
+    }
+    .booking_title h2 {
+        font-size: 28px;
+    }
+    .b_d_wrapper {
+        text-align: center;
+    }
+    .b_d_dateseletor {
+        flex-direction: column;
+    }
+    .check_box.mr-15 {
+        margin-right: 0;
+        width: 100%;
+    }
+    .check_box {
+        width: 100%;
+    }
+
+    /* question */
+    section.question_part.pt-100.pb-100 {
+        padding: 50px 0;
+    }
+    .question_input {
+        flex-direction: column;
+        width: 100%;
+    }
+    .question_input input.ii {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .question_input .chech_btnn {
+        width: 70%;
+        margin-top: 15px;
+    }
+
+    /* footer */
+    footer.footer_part.pt-100 {
+        padding: 50px 0 0 0;
+    }
+    .footer_top {
+        padding-bottom: 0;
+    }
+    .single_footer.res {
+        margin-bottom: 30px;
+    }
+    .btnnnn.octicon.octicon-comment span {
+        font-size: 12px;
+    }
+    .octicon-comment {
+        padding: 10px;
+        margin-right: 0;
+    }
+}
